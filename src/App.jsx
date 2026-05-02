@@ -360,7 +360,7 @@ function Navbar({ page, setPage }) {
   return (
     <nav style={{
       position:"fixed",top:0,left:0,right:0,zIndex:900,
-      background: scrolled ? "rgba(26,61,43,0.97)" : "transparent",
+      background: scrolled ? "rgba(26,61,43,0.97)" : "rgba(26,61,43,0.97)",
       backdropFilter: scrolled ? "blur(12px)" : "none",
       borderBottom: scrolled ? `1px solid rgba(82,183,136,.2)` : "none",
       transition:"all .35s ease",
@@ -1076,7 +1076,7 @@ function ContactPage() {
             <div style={{marginBottom:32}}>
               {[
                 { icon:"📍",label:"Address",val:"15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001" },
-                { icon:"📞",label:"Phone",val:"+94 70 260 6155 | +94 70 310 6627" },
+                { icon:"📞",label:"Phone",val:"+91 70147-62083" },
                 { icon:"✉️",label:"Email",val:"info@globaledgetraders.top" },
                 { icon:"🌐",label:"Website",val:"https://globaledgetraders.top" },
               ].map(item => (
@@ -1095,7 +1095,7 @@ function ContactPage() {
             </div>
 
             {/* UK Partner */}
-            <div style={{background:C.sand,borderRadius:16,padding:24}}>
+            {/* <div style={{background:C.sand,borderRadius:16,padding:24}}>
               <div style={{display:"flex",alignItems:"center",gap:8,marginBottom:16}}>
                 <span style={{fontSize:22}}>🇬🇧</span>
                 <h4 className="serif" style={{fontSize:"1rem",color:C.forest}}>UK Partner — Ananda TM Ltd</h4>
@@ -1109,10 +1109,10 @@ function ContactPage() {
                   <span>{item.icon}</span><span>{item.val}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             {/* WhatsApp */}
-            <a href="https://wa.me/94702606155?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
+            <a href="https://wa.me/7014762083?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
               target="_blank" rel="noopener noreferrer"
               style={{
                 display:"flex",alignItems:"center",gap:12,marginTop:20,
@@ -1198,8 +1198,8 @@ function Footer({ setPage }) {
           <div>
             <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase"}}>Get in Touch</h4>
             {[
-              ["📍","No 421/8, Bodhiya Road, Thalahena, Malabe, Sri Lanka"],
-              ["📞","+94 70 260 6155"],
+              ["📍","15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001"],
+              ["📞","+91 70147-62083"],
               ["✉️","info@globaledgetraders.top"],
               ["🌐","globaledgetraders.top"],
             ].map(([ic,val]) => (
@@ -1207,20 +1207,17 @@ function Footer({ setPage }) {
                 <span>{ic}</span><span style={{color:"rgba(255,255,255,.65)" }}>{val}</span>
               </div>
             ))}
-            <div style={{marginTop:16,paddingTop:16,borderTop:"1px solid rgba(255,255,255,.1)", textAlign: "left" }}>
+            {/* <div style={{marginTop:16,paddingTop:16,borderTop:"1px solid rgba(255,255,255,.1)", textAlign: "left" }}>
               <div style={{fontSize:12,color:C.sage,fontWeight:600,marginBottom:8}}>🇬🇧 UK PARTNER</div>
               <div style={{fontSize:13,color:"rgba(255,255,255,.55)"}}>Ananda TM Ltd, Ipswich, UK</div>
-            </div>
+            </div> */}
           </div>
         </div>
 
         {/* Bottom bar */}
         <div style={{borderTop:"1px solid rgba(255,255,255,.1)",paddingTop:24,display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:12}}>
           <div style={{fontSize:13,color:"rgba(255,255,255,.4)"}}>
-            © 2025 Global Edge Traders (Pvt) Ltd. All rights reserved. | Reg. No: PV00323236
-          </div>
-          <div style={{fontSize:13,color:"rgba(255,255,255,.4)"}}>
-            Sri Lanka 🇱🇰 • United Kingdom 🇬🇧 • Global 🌍
+            © 2026 Global Edge Traders (Pvt) Ltd. All rights reserved.
           </div>
         </div>
       </div>
@@ -1263,7 +1260,7 @@ export default function App() {
       <Footer setPage={setPage}/>
 
       {/* WhatsApp FAB */}
-      <a href="https://wa.me/94702606155?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
+      <a href="https://wa.me/7014762083?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
         target="_blank" rel="noopener noreferrer"
         className="whatsapp-btn"
         title="Chat on WhatsApp">
