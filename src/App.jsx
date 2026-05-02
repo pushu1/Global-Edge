@@ -927,12 +927,28 @@ function WhyUsPage({ setPage }) {
               background:C.white,borderRadius:20,padding:36,
               boxShadow:"0 4px 24px rgba(0,0,0,.07)",
             }}>
-              <div style={{
+              {/* <div style={{
                 width:60,height:60,borderRadius:16,
                 background:C.sand,
                 display:"flex",alignItems:"center",justifyContent:"center",
                 fontSize:28,marginBottom:20,
-              }}>{item.icon}</div>
+              }}>
+              {item.icon}</div> */}
+
+              <div style={{
+                      width:60,
+                      height:60,
+                      borderRadius:16,
+                      background:C.sand,
+                      display:"flex",
+                      alignItems:"center",
+                      justifyContent:"center",
+                      fontSize:28,
+                      marginBottom:20,
+                      margin: "0 auto 20px" 
+                         }}>
+                      {item.icon}
+                    </div>
               <h3 className="serif" style={{fontSize:"1.2rem",color:C.forest,marginBottom:10}}>{item.title}</h3>
               <p style={{color:C.muted,lineHeight:1.75,fontSize:15}}>{item.desc}</p>
             </div>
