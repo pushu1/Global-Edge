@@ -314,12 +314,14 @@ const PRODUCTS = [
 ];
 
 const WHY_US = [
-  { icon: "🏆", title: "Premium Quality", desc: "Every product meets rigorous quality controls and international standards — from fresh produce to essential commodities." },
-  { icon: "🌍", title: "Global Reach", desc: "Extensive global network of partners enabling efficient export and re-export services to every corner of the world." },
-  { icon: "🌱", title: "Sustainable Practices", desc: "We work closely with farmers and suppliers who share our values, ensuring products are ethically and sustainably sourced." },
-  { icon: "🤝", title: "Customer-Centric", desc: "Customized solutions tailored to meet the unique needs of wholesalers, retailers, and manufacturers worldwide." },
-  { icon: "✈️", title: "Reliable Logistics", desc: "Expert team ensures each shipment meets international standards with seamless, on-time delivery solutions." },
-  { icon: "💡", title: "5+ Years Experience", desc: "Backed by years of expertise in the export and re-export industry across agricultural and consumer goods sectors." },
+  { icon: "🏆", title: "Our Process", desc: "We follow a structured and transparent approach to ensure seamless global trade operations and client satisfaction at every stage." },
+  { icon: "🌍", title: "Requirement Analysis", desc: "We understand your exact product specifications, quantity, quality standards, and target pricing." },
+  { icon: "🌱", title: "Strategic Sourcing", desc: "We identify and engage reliable suppliers from our trusted network to match your requirements." },
+  { icon: "🤝", title: "Quality Assurance", desc: "Products undergo strict quality checks and verification to ensure compliance with international standards." },
+  { icon: "✈️", title: "Competitive Quotation", desc: "We provide transparent pricing with the best possible value based on market conditions." },
+  { icon: "💡", title: "Order Confirmation", desc: "Once terms are finalised, we initiate the procurement and documentation process." },
+  { icon: "💡", title: "Logistics & Documentation", desc: "We handle export documentation, shipping coordination, and compliance for smooth transactions." },
+  { icon: "💡", title: "Delivery & Support", desc: "Timely shipment delivery with continuous updates and post-shipment assistance." },
 ];
 
 /* ─── ICON COMPONENTS ────────────────────────────────────────────── */
@@ -447,15 +449,26 @@ function HomePage({ setPage }) {
         {/* Floating emojis */}
         {["🌿","🥥","🌶️","🫙"].map((e,i) => (
           <div key={i} style={{
-            position:"absolute",fontSize:32,opacity:.15,
+            position:"absolute",fontSize:32,opacity:.50,
             top:`${20+i*18}%`,left:`${75+i*5}%`,
             animation:`leafFloat ${3+i*.5}s ease-in-out infinite`,
             animationDelay:`${i*.7}s`,
           }}>{e}</div>
         ))}
 
-        <div style={{width:"100%",padding:"120px 60px 80px"}}>
-          <div style={{maxWidth:680}}>
+        {/* <div style={{width:"100%",padding:"120px 60px 80px"}}> */}
+ <div style={{
+             width: "100%",
+             padding: "120px 60px 80px",
+             display: "flex",
+             justifyContent: "flex-start",   
+             alignItems: "center"
+}}>
+          {/* <div style={{maxWidth:680}}> */}
+          <div style={{
+  maxWidth: 650,
+  textAlign: "left"
+}}>
             <div className="anim-up" style={{
               display:"inline-flex",alignItems:"center",gap:8,
               background:"rgba(82,183,136,.15)",border:`1px solid rgba(82,183,136,.3)`,
@@ -463,18 +476,18 @@ function HomePage({ setPage }) {
             }}>
               <span style={{width:8,height:8,borderRadius:"50%",background:C.sage,display:"inline-block"}}/>
               <span style={{color:C.sage,fontSize:13,fontWeight:500,letterSpacing:1.5,textTransform:"uppercase"}}>
-                Sri Lanka's Export Excellence
+                Supplying the world, seamlessly
               </span>
             </div>
 
-            <h1 className="serif anim-up delay-1" style={{fontSize:"clamp(2.4rem,5vw,4rem)",color:"#fff",lineHeight:1.15,marginBottom:24}}>
-              From the Soil to the
-              <span className="gradient-text"> Ocean,</span><br/>
-              Freshness Knows<br/>No Bounds.
+            <h1 className="serif anim-up delay-1" style={{fontSize:"clamp(2.4rem,3vw,1rem)",color:"#fff",lineHeight:1.15,marginBottom:24}}>
+              APB Global Commodity And Outsourcing
+              <span className="gradient-text"> APB IN DARK SHADE,</span><br/>
+              {/* From The Ground To <br/>Your Industry. */}
             </h1>
 
             <p className="anim-up delay-2" style={{color:"rgba(255,255,255,.72)",fontSize:17,lineHeight:1.7,marginBottom:36,maxWidth:520}}>
-              Global Edge Traders connects premium Sri Lankan agricultural producers with global markets — delivering quality, sustainability, and trust across every shipment.
+              From The Ground To Your Industry.
             </p>
 
             <div className="anim-up delay-3" style={{display:"flex",gap:16,flexWrap:"wrap"}}>
@@ -517,14 +530,14 @@ function HomePage({ setPage }) {
         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:64,alignItems:"center"}} className="grid-responsive">
           <div>
             <div className="section-divider"/>
-            <h2 className="serif" style={{fontSize:"clamp(1.8rem,3vw,2.6rem)",color:C.forest,lineHeight:1.3,marginBottom:20}}>
-              Your Gateway to<br/>Global Agricultural Trade
+            <h2 className="serif" style={{fontSize:"clamp(1.8rem,3vw,2.6rem,)",color:C.forest,lineHeight:1.3,marginBottom:20}}>
+              Powered by Networks<br/>Connecting Global Trade
             </h2>
-            <p style={{color:C.muted,lineHeight:1.8,fontSize:16,marginBottom:16}}>
-              Global Edge Traders is a dynamic export and re-export company specializing in high-quality agricultural and consumer goods. With strong ties to trusted farmers and suppliers, our expert team ensures each shipment meets international standards.
+            <p style={{color:C.muted,lineHeight:1.8,fontSize:16,marginBottom:16, textAlign: "left"}}>
+              APB Global Commodity and Outsourcing is a dynamic international trading and service company specialising in the supply of metals, agro commodities, chemicals, and leather goods. Built on a foundation of trust, transparency, and performance, we deliver end-to-end solutions that simplify global trade. With a deep understanding of international markets and supply chains, we ensure consistent quality, competitive pricing, and timely delivery. 
             </p>
-            <p style={{color:C.muted,lineHeight:1.8,fontSize:16,marginBottom:28}}>
-              We offer tailored solutions for wholesalers, retailers, and manufacturers — delivering premium products at competitive prices backed by a global network and years of experience.
+            <p style={{color:C.muted,lineHeight:1.8,fontSize:16,marginBottom:28, textAlign: "left"}}>
+             Our team works closely with trusted suppliers and partners worldwide, enabling us to meet the evolving demands of modern businesses. In addition to commodities, our outsourcing services are designed to help organisations streamline operations, reduce overheads, and enhance efficiency. Whether it’s sourcing, logistics, or operational support, we act as a strategic partner focused on long-term value creation. At APB Global, we don’t just move goods—we build lasting business relationships.
             </p>
             <button className="btn-outline" onClick={() => { setPage("about"); window.scrollTo(0,0); }}
               style={{padding:"12px 28px",borderRadius:24,fontSize:14}}>
@@ -595,7 +608,7 @@ function HomePage({ setPage }) {
       {/* CTA banner */}
       <section style={{background:`linear-gradient(135deg,${C.forest},#0f2419)`,padding:"72px 24px",textAlign:"center"}}>
         <h2 className="serif" style={{fontSize:"clamp(1.6rem,3vw,2.4rem)",color:"#fff",marginBottom:16}}>
-          Ready to Source Premium Agricultural Products?
+          Ready to Source Products?
         </h2>
         <p style={{color:"rgba(255,255,255,.65)",fontSize:16,marginBottom:32,maxWidth:480,margin:"0 auto 32px"}}>
           Connect with us today and let's build a long-term partnership rooted in quality and trust.
@@ -623,9 +636,9 @@ function AboutPage() {
         padding:"80px 24px 60px",textAlign:"center",
       }}>
         <div className="section-divider" style={{margin:"0 auto 16px"}}/>
-        <h1 className="serif" style={{fontSize:"clamp(2rem,4vw,3rem)",color:"#fff",marginBottom:16}}>About Global Edge Traders</h1>
+        <h1 className="serif" style={{fontSize:"clamp(2rem,3vw,2rem)",color:"#fff",marginBottom:16}}>APB Global commodity and outsourcing</h1>
         <p style={{color:"rgba(255,255,255,.65)",fontSize:16,maxWidth:560,margin:"0 auto"}}>
-          Your reliable partner in international agricultural trade
+          Your Reliable Partner In Domestic & International Trade
         </p>
       </section>
 
@@ -635,26 +648,24 @@ function AboutPage() {
           <div>
             <h2 className="serif" style={{fontSize:"1.8rem",color:C.forest,marginBottom:16}}>Who We Are</h2>
             <div className="section-divider"/>
-            <p style={{color:C.muted,lineHeight:1.85,fontSize:16,marginBottom:16}}>
-              Global Edge Traders is a dynamic export and re-export company specializing in high-quality agricultural and consumer goods, including fresh fruits, vegetables, edible oils, spices, grains, sugar, and coconut-based products. We are committed to quality, sustainability, and customer satisfaction.
+            <p style={{color:C.muted,lineHeight:1.85,fontSize:16, textAlign: "left"}}>
+              APB Global Commodity & Outsourcing is a premier export-oriented trading firm specialising in the global sourcing and supply of high-quality commodities and industrial products. Headquartered in India, the company is strategically positioned to connect international markets with reliable and competitively sourced goods.
+              Our diverse portfolio includes agro products, chemicals, metals, leather goods, and minerals, carefully curated to meet the stringent quality and compliance standards of global buyers. We work closely with vetted manufacturers and suppliers to ensure consistency, traceability, and excellence across every shipment.
+              With a strong focus on international trade, APB Global Commodity & Outsourcing offers end-to-end export solutions—from procurement and quality control to logistics and documentation—ensuring a seamless and efficient supply chain experience. Our operational expertise and market insight allow us to adapt swiftly to evolving global demands while maintaining cost efficiency and delivery reliability.
+            We are committed to building long-term partnerships based on trust, integrity, and performance. By combining global reach with local expertise, APB Global Commodity & Outsourcing serves as a dependable partner for businesses seeking premium-quality exports from India.
             </p>
-            <p style={{color:C.muted,lineHeight:1.85,fontSize:16,marginBottom:16}}>
-              With strong ties to trusted farmers and suppliers, our expert team ensures each shipment meets international standards. We offer tailored solutions for wholesalers, retailers, and manufacturers — delivering premium products at competitive prices.
-            </p>
-            <p style={{color:C.muted,lineHeight:1.85,fontSize:16}}>
-              Backed by a global network and years of experience, Global Edge Traders is your reliable partner in international trade.
-            </p>
+            
           </div>
           <div style={{background:C.sand,borderRadius:20,padding:32}}>
             <div style={{fontSize:40,marginBottom:16}}>🏢</div>
             <div style={{fontSize:13,color:C.muted,marginBottom:20,fontWeight:500,letterSpacing:1,textTransform:"uppercase"}}>Corporate Details</div>
             {[
-              ["Company","Global Edge Traders (Pvt) Ltd"],
-              ["Incorporated","3 March 2025"],
+              ["Company","APB Global Commodity and Outsourcing"],
+              ["Incorporated","2017"],
               ["Reg. No","PV00323236"],
-              ["TIN","179766353"],
+              ["GST","08ASBPD0759L1ZP"],
               ["VAT","179766353-2525"],
-              ["Country","Sri Lanka"],
+              ["Country","India"],
             ].map(([k,v]) => (
               <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"8px 0",borderBottom:`1px solid rgba(0,0,0,.07)`,fontSize:14}}>
                 <span style={{color:C.muted,fontWeight:500}}>{k}</span>
@@ -665,12 +676,12 @@ function AboutPage() {
         </div>
 
         {/* Vision & Mission */}
-        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:64}} className="grid-responsive">
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:24,marginBottom:64, textAlign: "left"}} className="grid-responsive">
           {[
             { icon:"🔭",title:"Our Vision",color:C.leaf,
-              text:"To be a globally recognized leader in exporting and re-exporting premium agricultural and consumer goods. We aim to connect quality local producers with international markets through sustainable, ethical trade, building lasting partnerships and contributing positively to global agriculture and commerce." },
+              text:"To establish APB Global Commodity & Outsourcing as a distinguished global powerhouse in commodity trading—synonymous with prestige, reliability, and innovation. We envision shaping the future of international trade by setting elite benchmarks in quality, sustainability, and strategic sourcing while building a legacy of trust across global markets."},
             { icon:"🎯",title:"Our Mission",color:C.amber,
-              text:"To deliver high-quality, sustainable agricultural and consumer goods to global markets while upholding ethical practices and supporting local producers. Through our global network and customer-centric approach, we aim to be a trusted partner in international trade, promoting food security, sustainable agriculture, and long-term business success." },
+              text:"To curate and deliver world-class commodities through a refined global network built on trust, precision, and excellence. APB Global Commodity & Outsourcing is dedicated to sourcing and supplying premium agro products, metals, chemicals, leather goods, and minerals with uncompromising quality standards, fostering enduring partnerships and enabling seamless international trade."},
           ].map(item => (
             <div key={item.title} style={{
               background:C.white,borderRadius:20,padding:36,
@@ -695,10 +706,10 @@ function AboutPage() {
             }}>👩‍💼</div>
             <div>
               <div style={{color:C.sage,fontSize:13,letterSpacing:2,textTransform:"uppercase",marginBottom:8}}>Visionary Founder</div>
-              <h3 className="serif" style={{fontSize:"1.6rem",color:"#fff",marginBottom:4}}>Ashani K. Kodithuwakku</h3>
-              <div style={{color:"rgba(255,255,255,.55)",fontSize:14,marginBottom:16}}>Founder | Chairperson | Managing Director & CEO</div>
+              <h3 className="serif" style={{fontSize:"1.6rem",color:"#fff",marginBottom:4}}>Abhishek Chouhan</h3>
+              <div style={{color:"rgba(255,255,255,.55)",fontSize:14,marginBottom:16}}>Founder/Managing Director</div>
               <p style={{color:"rgba(255,255,255,.75)",lineHeight:1.8,fontSize:15,fontStyle:"italic"}}>
-                "As the Visionary Founder & Export Expert, with over 5 years of experience in the export and re-export industry, I specialize in fresh fruits and vegetables, spices, edible oils, sugar, coconut coir products, coconut products, and grains. My commitment to excellence and customer-centric approach drives me to exceed expectations and build lasting, reliable partnerships worldwide."
+                "I firmly believe that sustainable growth comes from integrity, discipline, and a relentless pursuit of excellence. With the continued support of our partners and clients, we are confident in our vision to create a lasting global impact."
               </p>
             </div>
           </div>
@@ -715,8 +726,8 @@ function AboutPage() {
           </p>
           <div style={{display:"flex",gap:24,flexWrap:"wrap"}}>
             {[
-              ["📍","11, Cromarty, Ipswich, IP4 3EU, United Kingdom"],
-              ["📞","+44 7361 556886"],
+              ["📍","15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001"],
+              ["📞","+91-9950694181,7014762083"],
               ["✉️","ajithdharmapala@yahoo.co.uk"],
             ].map(([ic,val]) => (
               <div key={val} style={{display:"flex",alignItems:"center",gap:8,fontSize:14,color:C.ink}}>
@@ -905,7 +916,7 @@ function WhyUsPage({ setPage }) {
         <div className="section-divider" style={{margin:"0 auto 16px"}}/>
         <h1 className="serif" style={{fontSize:"clamp(2rem,4vw,3rem)",color:"#fff",marginBottom:12}}>Why Choose Us?</h1>
         <p style={{color:"rgba(255,255,255,.65)",fontSize:16,maxWidth:520,margin:"0 auto"}}>
-          Six compelling reasons why global buyers trust Global Edge Traders
+          Delivering agro products, metals, chemicals, leather goods, and minerals to international markets with trust and precision.
         </p>
       </section>
 
@@ -1048,7 +1059,7 @@ function ContactPage() {
             <div className="section-divider"/>
             <div style={{marginBottom:32}}>
               {[
-                { icon:"📍",label:"Address",val:"No 421/8, Bodhiya Road, Thalahena, Malabe, Sri Lanka" },
+                { icon:"📍",label:"Address",val:"15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001" },
                 { icon:"📞",label:"Phone",val:"+94 70 260 6155 | +94 70 310 6627" },
                 { icon:"✉️",label:"Email",val:"info@globaledgetraders.top" },
                 { icon:"🌐",label:"Website",val:"https://globaledgetraders.top" },
@@ -1111,9 +1122,9 @@ function ContactPage() {
 /* ─── FOOTER ─────────────────────────────────────────────────────── */
 function Footer({ setPage }) {
   return (
-    <footer style={{background:C.forest,color:"rgba(255,255,255,.75)",padding:"56px 24px 32px"}}>
+    <footer style={{background:C.forest,color:"rgba(255,255,255,.75)",padding:"56px 24px 32px" }}>
       <div style={{maxWidth:1200,margin:"0 auto"}}>
-        <div style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1.5fr",gap:40,marginBottom:48}} className="footer-grid">
+        <div style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1.5fr",gap:40,marginBottom:48,}} className="footer-grid">
           {/* Brand */}
           <div>
             <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:16}}>
@@ -1127,7 +1138,7 @@ function Footer({ setPage }) {
                 <div style={{color:C.sage,fontSize:11,letterSpacing:2,textTransform:"uppercase"}}>(Pvt) Ltd</div>
               </div>
             </div>
-            <p style={{fontSize:14,lineHeight:1.7,marginBottom:16,maxWidth:280}}>
+            <p style={{fontSize:14,lineHeight:1.7,marginBottom:16,maxWidth:280, textAlign: "left" }}>
               From the Soil to the Ocean — Freshness Knows No Bounds. Your reliable partner in international agricultural trade.
             </p>
             <div style={{display:"flex",gap:12}}>
@@ -1143,9 +1154,9 @@ function Footer({ setPage }) {
 
           {/* Quick links */}
           <div>
-            <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase"}}>Navigate</h4>
+            <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase",}}>Navigate</h4>
             {["home","about","products","whyus","contact"].map(id => (
-              <div key={id} style={{marginBottom:10}}>
+              <div key={id} style={{marginBottom:10, textAlign: "left" }}>
                 <button onClick={() => { setPage(id); window.scrollTo(0,0); }}
                   style={{background:"none",border:"none",color:"rgba(255,255,255,.65)",cursor:"pointer",fontSize:14,padding:0,textTransform:"capitalize",
                     transition:"color .2s"}}
@@ -1159,9 +1170,9 @@ function Footer({ setPage }) {
 
           {/* Products */}
           <div>
-            <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase"}}>Products</h4>
+            <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase",}}>Products</h4>
             {PRODUCTS.map(p => (
-              <div key={p.id} style={{marginBottom:10,fontSize:14,color:"rgba(255,255,255,.65)"}}>
+              <div key={p.id} style={{marginBottom:10,fontSize:14,color:"rgba(255,255,255,.65)", textAlign: "left" }}>
                 {p.emoji} {p.category}
               </div>
             ))}
@@ -1176,11 +1187,11 @@ function Footer({ setPage }) {
               ["✉️","info@globaledgetraders.top"],
               ["🌐","globaledgetraders.top"],
             ].map(([ic,val]) => (
-              <div key={val} style={{display:"flex",gap:10,marginBottom:12,fontSize:14}}>
-                <span>{ic}</span><span style={{color:"rgba(255,255,255,.65)"}}>{val}</span>
+              <div key={val} style={{display:"flex",gap:10,marginBottom:12,fontSize:14, textAlign: "left" }}>
+                <span>{ic}</span><span style={{color:"rgba(255,255,255,.65)" }}>{val}</span>
               </div>
             ))}
-            <div style={{marginTop:16,paddingTop:16,borderTop:"1px solid rgba(255,255,255,.1)"}}>
+            <div style={{marginTop:16,paddingTop:16,borderTop:"1px solid rgba(255,255,255,.1)", textAlign: "left" }}>
               <div style={{fontSize:12,color:C.sage,fontWeight:600,marginBottom:8}}>🇬🇧 UK PARTNER</div>
               <div style={{fontSize:13,color:"rgba(255,255,255,.55)"}}>Ananda TM Ltd, Ipswich, UK</div>
             </div>
