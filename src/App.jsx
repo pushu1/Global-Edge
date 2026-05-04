@@ -111,9 +111,9 @@ const STYLE = `
 
   .hero-bg{
     background:
-      radial-gradient(ellipse at 20% 50%, rgba(82,183,136,.18) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 20%, rgba(224,123,57,.12) 0%, transparent 50%),
-      linear-gradient(160deg, ${C.forest} 0%, #0f2419 40%, #1a2e1a 100%);
+      radial-gradient(ellipse at 20% 50%, #1a0f2e 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, #1a0f2e 0%, transparent 50%),
+      linear-gradient(160deg, ${C.forest} 0%, #2e7d5b 40%, #1a2e1a 100%);
   }
 
   .card-hover{transition:transform .3s ease,box-shadow .3s ease}
