@@ -178,24 +178,24 @@ const STYLE = `
 
 /* ─── DATA ───────────────────────────────────────────────────────── */
 const PRODUCTS = [
-  {
-    id: "fruits",
-    category: "Fresh Fruits & Vegetables",
-    image: fruitsImg,
-    color: "#e07b39",
-    bgColor: "#fff8f0",
-    items: [
-      { name: "King Coconut", image: kingcoconutImg, desc: "Premium Sri Lankan king coconut, prized for its sweet refreshing water." },
-      { name: "Red Papaya", image: RedPapayaImg, desc: "Vibrant, nutrient-rich red papaya with natural sweetness." },
-      { name: "Tapioca", image: TapiocaImg, desc: "Fresh tapioca (cassava) root, a versatile tropical staple." },
-      { name: "Green Papaya", image: GreenPapayaImg, desc: "Crisp green papaya used widely in Asian cuisine." },
-      { name: "PineApple", image: PineAppleImg, desc: "Juicy, tropical pineapple sourced from premium farms." },
-      { name: "Mangosteen", image: MangosteenImg, desc: "The 'Queen of Fruits' — a rare, exotic tropical delicacy." },
-      { name: "Semi-Husk Coconut", image: SemiHuskCoconutImg, desc: "Partially husked coconuts ready for international export." },
-      { name: "Jackfruit", image: JackfruitImg, desc: "Large, versatile tropical fruit popular across global markets." },
-      { name: "Young Jackfruit", image: YoungJackfruitImg, desc: "Tender young jackfruit widely used as a meat alternative." },
-    ],
-  },
+  // {
+  //   id: "fruits",
+  //   category: "Fresh Fruits & Vegetables",
+  //   image: fruitsImg,
+  //   color: "#e07b39",
+  //   bgColor: "#fff8f0",
+  //   items: [
+  //     { name: "King Coconut", image: kingcoconutImg, desc: "Premium Sri Lankan king coconut, prized for its sweet refreshing water." },
+  //     { name: "Red Papaya", image: RedPapayaImg, desc: "Vibrant, nutrient-rich red papaya with natural sweetness." },
+  //     { name: "Tapioca", image: TapiocaImg, desc: "Fresh tapioca (cassava) root, a versatile tropical staple." },
+  //     { name: "Green Papaya", image: GreenPapayaImg, desc: "Crisp green papaya used widely in Asian cuisine." },
+  //     { name: "PineApple", image: PineAppleImg, desc: "Juicy, tropical pineapple sourced from premium farms." },
+  //     { name: "Mangosteen", image: MangosteenImg, desc: "The 'Queen of Fruits' — a rare, exotic tropical delicacy." },
+  //     { name: "Semi-Husk Coconut", image: SemiHuskCoconutImg, desc: "Partially husked coconuts ready for international export." },
+  //     { name: "Jackfruit", image: JackfruitImg, desc: "Large, versatile tropical fruit popular across global markets." },
+  //     { name: "Young Jackfruit", image: YoungJackfruitImg, desc: "Tender young jackfruit widely used as a meat alternative." },
+  //   ],
+  // },
   {
     id: "Spices",
     category: "Spices",
@@ -281,26 +281,26 @@ const PRODUCTS = [
       { name: "Virgin Coconut Oil", image: VirginCoconutOil1Img, specs: ["Cold-pressed", "No heat/chemicals", "High MCFAs", "Natural antioxidants"], desc: "Premium VCO from fresh coconut meat, retaining full nutritional and beneficial properties." },
     ],
   },
-  {
-    id: "sugar",
-    category: "Sugar",
-    image: SugarImg,
-      color: "#e07b39",
-      bgColor: "#fff8f0",
-    items: [
-      { name: "Sugar", image: Sugar1Img, desc: "High-quality refined and raw sugar for food manufacturing, retail, and industrial applications. Available in bulk quantities." },
-    ],
-  },
-  {
-    id: "ethanol",
-    category: "Ethanol",
-      image: EthanolImg,
-      color: "#e07b39",
-      bgColor: "#fff8f0",
-    items: [
-      { name: "Ethanol", image: Ethanol1Img, desc: "Industrial-grade ethanol for pharmaceutical, food, cosmetic, and industrial applications. Available in various purity grades." },
-    ],
-  },
+  // {
+  //   id: "sugar",
+  //   category: "Sugar",
+  //   image: SugarImg,
+  //     color: "#e07b39",
+  //     bgColor: "#fff8f0",
+  //   items: [
+  //     { name: "Sugar", image: Sugar1Img, desc: "High-quality refined and raw sugar for food manufacturing, retail, and industrial applications. Available in bulk quantities." },
+  //   ],
+  // },
+  // {
+  //   id: "ethanol",
+  //   category: "Ethanol",
+  //     image: EthanolImg,
+  //     color: "#e07b39",
+  //     bgColor: "#fff8f0",
+  //   items: [
+  //     { name: "Ethanol", image: Ethanol1Img, desc: "Industrial-grade ethanol for pharmaceutical, food, cosmetic, and industrial applications. Available in various purity grades." },
+  //   ],
+  // },
   {
     id: "grains",
     category: "Grains",
@@ -376,8 +376,7 @@ function Navbar({ page, setPage }) {
             fontSize:18,
           }}>🌿</div>
           <div>
-            <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>Global Edge</div>
-            <div style={{color:C.sage,fontSize:11,letterSpacing:2,textTransform:"uppercase"}}>Traders</div>
+            <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>APB Global</div>
           </div>
         </div>
 
@@ -481,8 +480,7 @@ function HomePage({ setPage }) {
             </div>
 
             <h1 className="serif anim-up delay-1" style={{fontSize:"clamp(2.4rem,3vw,1rem)",color:"#fff",lineHeight:1.15,marginBottom:24}}>
-              APB Global Commodity And Outsourcing
-              <span className="gradient-text"> APB IN DARK SHADE,</span><br/>
+             <span className="gradient-text">APB</span> Global Commodity And Outsourcing
               {/* From The Ground To <br/>Your Industry. */}
             </h1>
 
@@ -715,7 +713,7 @@ function AboutPage() {
           </div>
         </div>
 
-        {/* Business Partner */}
+        {/* Business Partner
         <div style={{background:C.sand,borderRadius:20,padding:36,border:`1px solid rgba(45,106,79,.15)`}}>
           <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:20}}>
             <div style={{fontSize:28}}>🇬🇧</div>
@@ -735,7 +733,7 @@ function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
 
       <style>{`@media(max-width:768px){.grid-responsive{grid-template-columns:1fr !important}}`}</style>
