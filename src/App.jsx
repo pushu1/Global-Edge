@@ -7,8 +7,6 @@ import EdibleOilsImg from "./assets/products/EdibleOils.png";
 import SugarImg from "./assets/products/Sugar.png"; 
 import EthanolImg from "./assets/products/Ethanol.png";
 import GrainsImg from "./assets/products/Grains.jpg";
-import kingcoconutImg from "./assets/products/kingcoconut.png";
-import RedPapayaImg from "./assets/products/RedPapaya.png";
 import TapiocaImg from "./assets/products/Tapioca.png";
 import GreenPapayaImg from "./assets/products/GreenPapaya.png";
 import PineAppleImg from "./assets/products/PineApple.png";
@@ -68,6 +66,37 @@ import VirginCoconutOil1Img from "./assets/products/VirginCoconutOil1.png";
 import Sugar1Img from "./assets/products/Sugar1.png";
 import Ethanol1Img from "./assets/products/Ethanol1.png";
 import GrainsVariousImg from "./assets/products/GrainsVarious.png";
+import AgroProductPremiumImg from "./assets/products/AgroProductPremium.png";
+import MilletsImg from "./assets/products/Millets.png";
+import HerbalMedicinalplantsImg from "./assets/products/HerbalMedicinalplants.png";
+import OilseedsImg from "./assets/products/Oilseeds.png";
+import NaturalSweetenersImg from "./assets/products/NaturalSweeteners.png";
+import BasmatiRiceImg from "./assets/products/BasmatiRice.png";
+import CuminSeedsImg from "./assets/products/CuminSeeds.png";
+import DryGingerImg from "./assets/products/DryGinger.png";
+import ChemicalsandFertilizersImg from "./assets/products/ChemicalsandFertilizers.png";
+import CalciumChlorideImg from "./assets/products/CalciumChloride.png";
+import MagnesiumChlorideImg from "./assets/products/MagnesiumChloride.png";
+import HydrochloricAcidImg from "./assets/products/HydrochloricAcid.png";
+import SodaAshImg from "./assets/products/SodaAsh.png";
+import SulphuricAcidImg from "./assets/products/SulphuricAcid.png";
+import UreaFertilizerImg from "./assets/products/UreaFertilizer.png";
+import CopperOxideImg from "./assets/products/CopperOxide.png";
+import ZincOxideImg from "./assets/products/ZincOxide.png";
+import SulphurImg from "./assets/products/Sulphur.png";
+import AceticAcidImg from "./assets/products/AceticAcid.png";
+import LeatherGoodsImg from "./assets/products/LeatherGoods.png";
+import LeatherBagsImg from "./assets/products/LeatherBags.png";
+import BeltsImg from "./assets/products/Belts.png";
+import WalletsImg from "./assets/products/Wallets.png";
+import ShoesImg from "./assets/products/Shoes.png";
+import LeatherGarmentsImg from "./assets/products/LeatherGarments.png";
+import LeatherFurnitureImg from "./assets/products/LeatherFurniture.png";
+import MineralsImg from "./assets/products/Minerals.png";
+import IronOreImg from "./assets/products/IronOre.png";
+import MagnesiumOreImg from "./assets/products/MagnesiumOre.png";
+import PalmOilImg from "./assets/products/PalmOil.png";
+import GroundnutOilImg from "./assets/products/GroundnutOil.png";
 /* ─── COLOR TOKENS ───────────────────────────────────────────────── */
 const C = {
   forest: "#1a3d2b",
@@ -113,7 +142,7 @@ const STYLE = `
     background:
       radial-gradient(ellipse at 20% 50%, #1a0f2e 0%, transparent 60%),
       radial-gradient(ellipse at 80% 20%, #1a0f2e 0%, transparent 50%),
-      linear-gradient(160deg, ${C.forest} 0%, #2e7d5b 40%, #1a2e1a 100%);
+      linear-gradient(160deg, ${C.forest} 0%, #d4c69a 40%, #1a2e1a 100%);
   }
 
   .card-hover{transition:transform .3s ease,box-shadow .3s ease}
@@ -178,24 +207,22 @@ const STYLE = `
 
 /* ─── DATA ───────────────────────────────────────────────────────── */
 const PRODUCTS = [
-  // {
-  //   id: "fruits",
-  //   category: "Fresh Fruits & Vegetables",
-  //   image: fruitsImg,
-  //   color: "#e07b39",
-  //   bgColor: "#fff8f0",
-  //   items: [
-  //     { name: "King Coconut", image: kingcoconutImg, desc: "Premium Sri Lankan king coconut, prized for its sweet refreshing water." },
-  //     { name: "Red Papaya", image: RedPapayaImg, desc: "Vibrant, nutrient-rich red papaya with natural sweetness." },
-  //     { name: "Tapioca", image: TapiocaImg, desc: "Fresh tapioca (cassava) root, a versatile tropical staple." },
-  //     { name: "Green Papaya", image: GreenPapayaImg, desc: "Crisp green papaya used widely in Asian cuisine." },
-  //     { name: "PineApple", image: PineAppleImg, desc: "Juicy, tropical pineapple sourced from premium farms." },
-  //     { name: "Mangosteen", image: MangosteenImg, desc: "The 'Queen of Fruits' — a rare, exotic tropical delicacy." },
-  //     { name: "Semi-Husk Coconut", image: SemiHuskCoconutImg, desc: "Partially husked coconuts ready for international export." },
-  //     { name: "Jackfruit", image: JackfruitImg, desc: "Large, versatile tropical fruit popular across global markets." },
-  //     { name: "Young Jackfruit", image: YoungJackfruitImg, desc: "Tender young jackfruit widely used as a meat alternative." },
-  //   ],
-  // },
+  {
+    id: "Agro",
+    category: "Agro Product Premium",
+    image: AgroProductPremiumImg,
+    color: "#e07b39",
+    bgColor: "#fff8f0",
+    items: [
+      { name: "Millets", image: MilletsImg, desc: "Nutrient-rich millets offering a healthy and sustainable food choice." },
+      { name: "Herbal & Medicinal plants", image: HerbalMedicinalplantsImg, desc: "Naturally grown herbs known for their therapeutic and wellness benefits." },
+      { name: "Oilseeds", image: OilseedsImg, desc: "High-quality oilseeds ideal for pure and nutritious oil extraction." },
+      { name: "Natural Sweeteners", image: NaturalSweetenersImg, desc: "Healthy sugar alternatives derived from natural sources." },
+      { name: "Natural Sweeteners", image: NaturalSweetenersImg, desc: "Healthy sugar alternatives derived from natural sources." },
+      { name: "Basmati Rice", image: BasmatiRiceImg, desc: "Premium long-grain basmati rice with rich aroma and fine texture." },
+    ],
+  },
+
   {
     id: "Spices",
     category: "Spices",
@@ -224,8 +251,58 @@ const PRODUCTS = [
       { name: "Turmeric Powder", image: TurmericPowderImg, desc: "Bright, high-curcumin turmeric powder from trusted sources." },
       { name: "Cardamom", image: CardamomImg, desc: "Premium green cardamom pods with intense aroma." },
       { name: "Coriander", image: CorianderImg, desc: "Whole and ground coriander seeds for global markets." },
+      { name: "Cumin Seeds", image: CuminSeedsImg, desc: "Aromatic cumin seeds with a warm and earthy flavor." },
+      { name: "Dry Ginger", image: DryGingerImg, desc: "Dried ginger with a sharp taste and multiple health benefits." },
     ],
   },
+    {
+    id: "Chemicals",
+    category: "Chemicals and Fertilizers",
+     image: ChemicalsandFertilizersImg,
+      color: "#e07b39",
+      bgColor: "#fff8f0",
+    items: [
+      { name: "Calcium Chloride", image: CalciumChlorideImg, desc: "High-purity calcium chloride used for industrial and de-icing applications." },
+      { name: "Magnesium Chloride", image: MagnesiumChlorideImg, desc: "Versatile compound used in agriculture, industry, and dust control." },
+      { name: "Hydrochloric Acid", image: HydrochloricAcidImg, desc: "Versatile compound used in agriculture, industry, and dust control." },
+      { name: "Soda Ash", image: SodaAshImg, desc: "Essential chemical for glass, detergent, and chemical production." },
+      { name: "Sulphuric Acid", image: SulphuricAcidImg, desc: "Highly important industrial acid used in fertilizers and processing." },
+      { name: "Urea Fertilizer", image: UreaFertilizerImg, desc: "Nitrogen-rich fertilizer that enhances crop growth and productivity." },
+      { name: "Copper Oxide", image: CopperOxideImg, desc: "Industrial-grade compound used in ceramics, electronics, and pigments." },
+      { name: "Zinc Oxide", image: ZincOxideImg, desc: "Industrial-grade compound used in ceramics, electronics, and pigments." },
+      { name: "Sulphur", image: SulphurImg, desc: "Key element used in fertilizers, chemicals, and industrial applications." },
+      { name: "Acetic Acid", image: AceticAcidImg, desc: "Widely used acid in food processing, chemicals, and industrial uses." },
+    ],
+  },
+
+  {
+    id: "Leather",
+    category: "Leather Goods",
+     image: LeatherGoodsImg,
+      color: "#e07b39",
+      bgColor: "#fff8f0",
+    items: [
+      { name: "Leather Bags", image: LeatherBagsImg, desc: "Premium quality leather bags combining durability with stylish design." },
+      { name: "Belts", image: BeltsImg, desc: "Strong and elegant leather belts crafted for everyday use." },
+      { name: "Wallets", image: WalletsImg, desc: "Finely crafted leather wallets offering durability and smart storage." },
+      { name: "Shoes", image: ShoesImg, desc: "High-quality leather shoes designed for comfort and long-lasting wear." },
+      { name: "LeatherGarments", image: LeatherGarmentsImg, desc: "Stylish leather apparel with superior finish and durability." },
+      { name: "LeatherFurniture", image: LeatherFurnitureImg, desc: "Luxury leather furniture offering comfort, elegance, and durability." },
+    ],
+  },
+
+    {
+    id: "Minerals",
+    category: "Minerals",
+     image: MineralsImg,
+      color: "#e07b39",
+      bgColor: "#fff8f0",
+    items: [
+      { name: "Iron Ore", image: IronOreImg, desc: "High-grade iron ore used in steel production and industrial applications." },
+      { name: "Magnesium Ore", image: MagnesiumOreImg, desc: "Quality magnesium ore suitable for industrial and manufacturing use." },
+    ],
+  },
+
   {
     id: "Coconut",
     category: "Coconut Products",
@@ -278,7 +355,9 @@ const PRODUCTS = [
       { name: "Refined Sunflower Oil", image: RefinedSunflowerOilImg, desc: "Premium sunflower oil purified through degumming, neutralization, bleaching, and deodorization." },
       { name: "Crude Soybean Oil", image: CrudeSoybeanOilImg, desc: "Raw soybean oil requiring further processing before export or consumption." },
       { name: "Refined Soybean Oil", image: RefinedSoybeanOilImg, desc: "High-quality refined soybean oil with free fatty acids, color, and odor removed." },
-      { name: "Virgin Coconut Oil", image: VirginCoconutOil1Img, specs: ["Cold-pressed", "No heat/chemicals", "High MCFAs", "Natural antioxidants"], desc: "Premium VCO from fresh coconut meat, retaining full nutritional and beneficial properties." },
+      { name: "Virgin Coconut Oil", image: VirginCoconutOil1Img, desc: "Premium VCO from fresh coconut meat, retaining full nutritional and beneficial properties." },
+      { name: "Palm Oil", image: PalmOilImg, desc: "Versatile and cost-effective oil widely used in cooking and food processing." },
+      { name: "Groundnut Oil", image: GroundnutOilImg, desc: "Pure peanut oil known for its rich flavor and high nutritional value." },
     ],
   },
   // {
