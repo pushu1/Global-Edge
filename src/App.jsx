@@ -219,7 +219,6 @@ const PRODUCTS = [
       { name: "Herbal & Medicinal plants", image: HerbalMedicinalplantsImg, desc: "Naturally grown herbs known for their therapeutic and wellness benefits." },
       { name: "Oilseeds", image: OilseedsImg, desc: "High-quality oilseeds ideal for pure and nutritious oil extraction." },
       { name: "Natural Sweeteners", image: NaturalSweetenersImg, desc: "Healthy sugar alternatives derived from natural sources." },
-      { name: "Natural Sweeteners", image: NaturalSweetenersImg, desc: "Healthy sugar alternatives derived from natural sources." },
       { name: "Basmati Rice", image: BasmatiRiceImg, desc: "Premium long-grain basmati rice with rich aroma and fine texture." },
     ],
   },
