@@ -19,8 +19,6 @@ import CinnamonC5Img from "./assets/products/CinnamonC5.png";
 import CinnamonC4Img from "./assets/products/CinnamonC4.png";
 import CinnamonC3Img from "./assets/products/CinnamonC3.png";
 import CinnamonM4Img from "./assets/products/CinnamonM4.png";
-import Quillings01Img from "./assets/products/Quillings01.png";
-import Quillings2Img from "./assets/products/Quillings2.png";
 import CinnamonChipsImg from "./assets/products/CinnamonChips.png";
 import CinnamonPowderImg from "./assets/products/CinnamonPowder.png";
 import ClovesHandPickedImg from "./assets/products/ClovesHandPicked.png";
@@ -93,10 +91,13 @@ import ShoesImg from "./assets/products/Shoes.png";
 import LeatherGarmentsImg from "./assets/products/LeatherGarments.png";
 import LeatherFurnitureImg from "./assets/products/LeatherFurniture.png";
 import MineralsImg from "./assets/products/Minerals.png";
-import IronOreImg from "./assets/products/IronOre.png";
-import MagnesiumOreImg from "./assets/products/MagnesiumOre.png";
 import PalmOilImg from "./assets/products/PalmOil.png";
 import GroundnutOilImg from "./assets/products/GroundnutOil.png";
+import CopperScrapImg from "./assets/products/CopperScrap.png";
+import AluminumIngotsImg from "./assets/products/AluminumIngots.png";
+import CopperMulberryImg from "./assets/products/CopperMulberry.png";
+import BrassScrapImg from "./assets/products/BrassScrap.png";
+import APBLogoImg from "./assets/products/APBLogo.png";
 /* ─── COLOR TOKENS ───────────────────────────────────────────────── */
 const C = {
   forest: "#1a3d2b",
@@ -230,13 +231,18 @@ const PRODUCTS = [
     color: "#e07b39",
     bgColor: "#fff8f0",
     items: [
+      { name: "Curry Leaves", image: CurryLeavesImg, desc: "Aromatic fresh/dried curry leaves, integral to South Asian cuisine." },
+      { name: "Cumin", image: CuminImg, desc: "High-quality whole cumin seeds with robust flavor." },
+      { name: "Turmeric Powder", image: TurmericPowderImg, desc: "Bright, high-curcumin turmeric powder from trusted sources." },
+      { name: "Cardamom", image: CardamomImg, desc: "Premium green cardamom pods with intense aroma." },
+      { name: "Coriander", image: CorianderImg, desc: "Whole and ground coriander seeds for global markets." },
+      { name: "Cumin Seeds", image: CuminSeedsImg, desc: "Aromatic cumin seeds with a warm and earthy flavor." },
+      { name: "Dry Ginger", image: DryGingerImg, desc: "Dried ginger with a sharp taste and multiple health benefits." },
       { name: "Cinnamon C5 Extra Special", image: CinnamonImg, specs: ["Diameter: 8mm–9mm", "Origin: Sri Lanka"], desc: "Finest grade Sri Lankan true cinnamon, extremely thin and aromatic." },
       { name: "Cinnamon C5", image: CinnamonC5Img, specs: ["Diameter: 10mm–12mm", "Origin: Sri Lanka"], desc: "Premium Ceylon cinnamon sticks, internationally recognized grade." },
       { name: "Cinnamon C4", image: CinnamonC4Img, specs: ["Diameter: 13mm–14mm"], desc: "High-quality cinnamon quills suitable for culinary and industrial use." },
       { name: "Cinnamon C3", image: CinnamonC3Img, specs: ["Diameter: 15mm–17mm"], desc: "Standard-grade cinnamon quills for bulk export." },
       { name: "Cinnamon M4", image: CinnamonM4Img, specs: ["Diameter: 18mm–20mm"], desc: "Larger diameter cinnamon sticks for specific market requirements." },
-      { name: "Quillings No. 01 (Super Fine)", image: Quillings01Img, specs: ["100% Hand Picked", "Moisture: max 12%"], desc: "Premium cinnamon quillings, super fine grade for specialized use." },
-      { name: "Quillings No. 02", image: Quillings2Img, specs: ["70%:30% blend", "Moisture: max 12%"], desc: "Mixed blend quillings for versatile applications." },
       { name: "Cinnamon Chips", image: CinnamonChipsImg, specs: ["50%:50% blend"], desc: "Cinnamon chips blended from quillings and quills." },
       { name: "Cinnamon Powder", image: CinnamonPowderImg, specs: ["Made from Quillings & Chips"], desc: "Finely milled cinnamon powder for food manufacturing." },
       { name: "Cloves (Hand Picked)", image: ClovesHandPickedImg, specs: ["Moisture: 12–13%", "Headcount: 99%", "Stems: < 0.2%", "Origin: Sri Lanka"], desc: "Premium hand-selected whole cloves with minimal stems." },
@@ -246,13 +252,6 @@ const PRODUCTS = [
       { name: "Black Pepper 550GL", image: BlackPepper550GLImg, specs: ["Moisture: 13–14% max"], desc: "550 GL grade — finest density black pepper." },
       { name: "Cracked Black Pepper ½", image: CrackedBlackPepperImg, specs: ["Moisture: 13–14% max"], desc: "Coarsely cracked black pepper for culinary use." },
       { name: "Ground Black Pepper (28 Mesh)", image: GroundBlackPepperImg, specs: ["Moisture: 13–14% max"], desc: "Finely ground black pepper, 28 mesh particle size." },
-      { name: "Curry Leaves", image: CurryLeavesImg, desc: "Aromatic fresh/dried curry leaves, integral to South Asian cuisine." },
-      { name: "Cumin", image: CuminImg, desc: "High-quality whole cumin seeds with robust flavor." },
-      { name: "Turmeric Powder", image: TurmericPowderImg, desc: "Bright, high-curcumin turmeric powder from trusted sources." },
-      { name: "Cardamom", image: CardamomImg, desc: "Premium green cardamom pods with intense aroma." },
-      { name: "Coriander", image: CorianderImg, desc: "Whole and ground coriander seeds for global markets." },
-      { name: "Cumin Seeds", image: CuminSeedsImg, desc: "Aromatic cumin seeds with a warm and earthy flavor." },
-      { name: "Dry Ginger", image: DryGingerImg, desc: "Dried ginger with a sharp taste and multiple health benefits." },
     ],
   },
     {
@@ -298,8 +297,10 @@ const PRODUCTS = [
       color: "#e07b39",
       bgColor: "#fff8f0",
     items: [
-      { name: "Iron Ore", image: IronOreImg, desc: "High-grade iron ore used in steel production and industrial applications." },
-      { name: "Magnesium Ore", image: MagnesiumOreImg, desc: "Quality magnesium ore suitable for industrial and manufacturing use." },
+      { name: "Copper Scrap", image: CopperScrapImg, desc: "High-grade copper scrap suitable for recycling and industrial applications." },
+      { name: "⁠Aluminum Ingots", image: AluminumIngotsImg, desc: "Premium quality aluminum ingots used in manufacturing and casting industries." },
+      { name: "⁠Copper Mulberry", image: CopperMulberryImg, desc: "High-purity copper material widely used in electrical and industrial applications." },
+      { name: "⁠Brass Scrap", image: BrassScrapImg, desc: "Quality brass scrap ideal for recycling and reuse in various industries." },
     ],
   },
 
@@ -447,7 +448,7 @@ function Navbar({ page, setPage }) {
     }}>
       <div style={{maxWidth:1200,margin:"0 auto",padding:"0 24px",display:"flex",alignItems:"center",justifyContent:"space-between"}}>
         {/* Logo */}
-        <div onClick={() => navigate("home")} style={{cursor:"pointer",display:"flex",alignItems:"center",gap:10}}>
+        {/* <div onClick={() => navigate("home")} style={{cursor:"pointer",display:"flex",alignItems:"center",gap:10}}>
           <div style={{
             width:40,height:40,borderRadius:"50%",
             background:`linear-gradient(135deg,${C.sage},${C.amber})`,
@@ -455,9 +456,19 @@ function Navbar({ page, setPage }) {
             fontSize:18,
           }}>🌿</div>
           <div>
-            <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>APB Global</div>
+            <div className="serif" style={{color:"#fff",fontSize:26,fontWeight:700,lineHeight:1.1}}>APB Global</div>
           </div>
-        </div>
+        </div> */}
+        <div 
+  onClick={() => navigate("home")} 
+  style={{ cursor: "pointer" }}
+>
+  <img 
+    src={APBLogoImg} 
+    alt="APB Logo" 
+    style={{ height: 40 }}
+  />
+</div>
 
         {/* Desktop links */}
         <div style={{display:"flex",gap:32,alignItems:"center"}} className="desktop-nav">
@@ -559,7 +570,7 @@ function HomePage({ setPage }) {
             </div>
 
             <h1 className="serif anim-up delay-1" style={{fontSize:"clamp(2.4rem,3vw,1rem)",color:"#fff",lineHeight:1.15,marginBottom:24}}>
-             <span className="gradient-text">APB</span> Global Commodity And Outsourcing
+            <span  style={{ background: "linear-gradient(90deg, #D4AF37, #FFC300)",fontSize: "1.3em", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: 700 }}> APB </span> Global Commodity And Outsourcing
               {/* From The Ground To <br/>Your Industry. */}
             </h1>
 
@@ -592,7 +603,7 @@ function HomePage({ setPage }) {
       </section>
 
       {/* Categories strip */}
-      <section style={{background:C.forest,padding:"24px 0",overflow:"hidden"}}>
+      {/* <section style={{background:C.forest,padding:"24px 0",overflow:"hidden"}}>
         <div style={{display:"flex",gap:40,animation:"shimmer 20s linear infinite",whiteSpace:"nowrap",width:"max-content"}}>
           {[...PRODUCTS,...PRODUCTS].map((p,i) => (
             <span key={i} style={{color:"rgba(183,228,199,.6)",fontSize:14,fontWeight:500,letterSpacing:1.5,textTransform:"uppercase"}}>
@@ -600,7 +611,52 @@ function HomePage({ setPage }) {
             </span>
           ))}
         </div>
-      </section>
+      </section> */}
+
+      <section
+  style={{
+    background: "linear-gradient(90deg, #0f2a1d, #1a3d2b)",
+    padding: "20px 0",
+    overflow: "hidden"
+  }}
+>
+  <div
+    style={{
+      display: "flex",
+      gap: 50,
+      whiteSpace: "nowrap",
+      animation: "scrollX 25s linear infinite"
+    }}
+    onMouseEnter={(e) =>
+      (e.currentTarget.style.animationPlayState = "paused")
+    }
+    onMouseLeave={(e) =>
+      (e.currentTarget.style.animationPlayState = "running")
+    }
+  >
+    {[...PRODUCTS, ...PRODUCTS].map((p, i) => (
+      <span
+        onClick={() => {
+  localStorage.setItem("activeCategory", p.id); // 👈 save category
+  setPage("products"); // 👈 page change
+}}
+        style={{
+          color: "#b7e4c7",
+          fontSize: 14,
+          fontWeight: 500,
+          letterSpacing: 1.5,
+          textTransform: "uppercase",
+          cursor: "pointer",
+          transition: "0.3s"
+        }}
+        onMouseEnter={(e) => (e.target.style.color = "#ffffff")}
+        onMouseLeave={(e) => (e.target.style.color = "#b7e4c7")}
+      >
+        {p.category}
+      </span>
+    ))}
+  </div>
+</section>
 
       {/* About teaser */}
       <section style={{maxWidth:1200,margin:"0 auto",padding:"80px 24px"}}>
@@ -899,6 +955,24 @@ function ProductCard({ item, color }) {
 }
 
 function ProductsPage({ setPage }) {
+  useEffect(() => {
+  const category = localStorage.getItem("activeCategory");
+
+  if (category) {
+    setTimeout(() => {
+      const el = document.getElementById(category);
+      if (el) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+        window.scrollBy(0, -80);
+      }
+    }, 300);
+
+    localStorage.removeItem("activeCategory");
+  }
+}, []);
   const [active, setActive] = useState("all");
 
   const displayed = active === "all" ? PRODUCTS : PRODUCTS.filter(p => p.id === active);
@@ -942,7 +1016,7 @@ function ProductsPage({ setPage }) {
 
       <div style={{maxWidth:1200,margin:"0 auto",padding:"48px 24px"}}>
         {displayed.map(cat => (
-          <div key={cat.id} style={{marginBottom:64}}>
+          <div key={cat.id} id={cat.id} style={{marginBottom:64}}>
             <div style={{display:"flex",alignItems:"center",gap:16,marginBottom:28}}>
          <img
              src={cat.image}
@@ -1038,7 +1112,7 @@ function WhyUsPage({ setPage }) {
           borderRadius:24,padding:"48px 40px",
           textAlign:"center",color:"#fff",
         }}>
-          <h2 className="serif" style={{fontSize:"2rem",marginBottom:16}}>Ready to Partner With Us?</h2>
+          <h2 className="serif" style={{fontSize:"2rem",marginBottom:16, color:"#fdf8f0"}}>Ready to Partner With Us?</h2>
           <p style={{color:"rgba(255,255,255,.65)",fontSize:16,marginBottom:28,maxWidth:460,margin:"0 auto 28px"}}>
             Join hundreds of global buyers who trust us for premium agricultural exports.
           </p>
@@ -1153,7 +1227,7 @@ function ContactPage() {
             <div style={{marginBottom:32}}>
               {[
                 { icon:"📍",label:"Address",val:"15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001" },
-                { icon:"📞",label:"Phone",val:"+91 70147-62083" },
+                { icon:"📞",label:"Phone",val:"+91 99506-94181 , 70147-62083" },
                 { icon:"✉️",label:"Email",val:"info@globaledgetraders.top" },
                 { icon:"🌐",label:"Website",val:"https://globaledgetraders.top" },
               ].map(item => (
@@ -1227,7 +1301,7 @@ function Footer({ setPage }) {
                 display:"flex",alignItems:"center",justifyContent:"center",fontSize:18,
               }}>🌿</div>
               <div>
-                <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>Global Edge Traders</div>
+                <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>APB Global</div>
                 <div style={{color:C.sage,fontSize:11,letterSpacing:2,textTransform:"uppercase"}}>(Pvt) Ltd</div>
               </div>
             </div>
@@ -1276,7 +1350,7 @@ function Footer({ setPage }) {
             <h4 style={{color:"#fff",fontWeight:700,fontSize:14,marginBottom:16,letterSpacing:.5,textTransform:"uppercase"}}>Get in Touch</h4>
             {[
               ["📍","15 Sector, Chopasni Housing Board, Jodhpur, Rajasthan 324001"],
-              ["📞","+91 70147-62083"],
+              ["📞","+91 99506-94181 , 70147-62083"],
               ["✉️","info@globaledgetraders.top"],
               ["🌐","globaledgetraders.top"],
             ].map(([ic,val]) => (
@@ -1294,7 +1368,7 @@ function Footer({ setPage }) {
         {/* Bottom bar */}
         <div style={{borderTop:"1px solid rgba(255,255,255,.1)",paddingTop:24,display:"flex",justifyContent:"space-between",flexWrap:"wrap",gap:12}}>
           <div style={{fontSize:13,color:"rgba(255,255,255,.4)"}}>
-            © 2026 Global Edge Traders (Pvt) Ltd. All rights reserved.
+            © 2026 APB Global (Pvt) Ltd. All rights reserved.
           </div>
         </div>
       </div>
@@ -1337,7 +1411,7 @@ export default function App() {
       <Footer setPage={setPage}/>
 
       {/* WhatsApp FAB */}
-      <a href="https://wa.me/7014762083?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
+      <a href="https://wa.me/9950694181?text=Hello%20Global%20Edge%20Traders%2C%20I%20am%20interested%20in%20your%20products."
         target="_blank" rel="noopener noreferrer"
         className="whatsapp-btn"
         title="Chat on WhatsApp">
