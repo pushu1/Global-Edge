@@ -1295,14 +1295,35 @@ function Footer({ setPage }) {
           {/* Brand */}
           <div>
             <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:16}}>
-              <div style={{
+              {/* <div style={{
                 width:40,height:40,borderRadius:"50%",
                 background:`linear-gradient(135deg,${C.sage},${C.amber})`,
                 display:"flex",alignItems:"center",justifyContent:"center",fontSize:18,
-              }}>🌿</div>
+                image: APBLogoImg,
+              }}>🌿</div> */}
+              
+              <div style={{
+  width:40,
+  height:40,
+  display:"flex",
+  alignItems:"center",
+  justifyContent:"center",
+  overflow:"hidden"
+}}>
+  <img
+    src={APBLogoImg}
+    alt="Logo"
+    style={{
+      width:"100%",
+      height:"100%",
+      objectFit:"cover",
+      borderRadius:"20%"
+    }}
+  />
+</div>
+              
               <div>
                 <div className="serif" style={{color:"#fff",fontSize:16,fontWeight:700,lineHeight:1.1}}>APB Global</div>
-                <div style={{color:C.sage,fontSize:11,letterSpacing:2,textTransform:"uppercase"}}>(Pvt) Ltd</div>
               </div>
             </div>
             <p style={{fontSize:14,lineHeight:1.7,marginBottom:16,maxWidth:280, textAlign: "left" }}>
