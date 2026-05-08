@@ -465,7 +465,7 @@ function Navbar({ page, setPage }) {
   <img 
     src={APBLogoImg} 
     alt="APB Logo" 
-    style={{ height: 40 }}
+    style={{ height: 50 }}
   />
 </div>
 
@@ -1302,8 +1302,8 @@ function Footer({ setPage }) {
               }}>🌿</div> */}
               
               <div style={{
-  width:40,
-  height:40,
+  width:50,
+  height:70,
   display:"flex",
   alignItems:"center",
   justifyContent:"center",
@@ -1316,7 +1316,6 @@ function Footer({ setPage }) {
       width:"100%",
       height:"100%",
       objectFit:"cover",
-      borderRadius:"20%"
     }}
   />
 </div>
